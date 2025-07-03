@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating Effects with CSS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <style>
+      @font-face {
+        font-family: "CustomFont";
+        src: url("fonts/Amanojaku.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .nav-bar a {
+        font-family: "CustomFont", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li class="drop">
+          <a href="#">Images</a>
+          <div class="rollover-menu">
+            <a href="#image1">Image 1</a>
+            <a href="#image2">Image 2</a>
+            <a href="#image3">Image 3</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+     <div class="sticky-gif">
+        <img src="images/Samurai.webp" alt="Samurai" style="width:100%;">
+      </div>
+    <!--IMAGES-->
+    <section>
+      <!--IMAGE ONE-->>
+      <div class="image-container" id="image1">
+        <img src="Images/japan-1.jpg" alt="a picture of japan" />
+        <div class="overlay"></div>
+      </div>
+      <!--IMAGE TWO-->
+      <div class="image-container" id="image2">
+        <img
+          src="images/Japan-2.jpg"
+          alt="a second picture of japan"
+          class="zoom"
+        />
+      </div>
+      <!--IMAGE THREE-->
+      <div class="image-container" id="image3">
+        <div class="circle">
+          <img src="images/Japan-3.jpg" alt="the last japan" />
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-text">
+        <p>The Tech Academy &copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>
