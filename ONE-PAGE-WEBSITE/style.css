@@ -1,0 +1,77 @@
+/*style.css*/
+/* Global font styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, web-safe font */
+    font-size: 16px; /* Base font size for readability */
+    line-height: 1.5; /* Improves text flow */
+    color: #333; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 20px; /* Basic padding for the page */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Headings with slightly larger font size */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif; /* Same font for consistency */
+    font-size: 18px; /* Slightly larger for headings */
+    margin-bottom: 10px;
+}
+
+/* Paragraphs and general text */
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Links for navigation */
+a {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007bff; /* Blue for links */
+    margin-right: 15px; /* Spacing between nav links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styles for the subscription form inputs */
+form input[type="email"], /* Assuming email input */
+form input[type="text"], /* Fallback if not email */
+form button[type="submit"] /* The subscribe button */ {
+    width: 100%; /* Full width within the form container */
+    padding: 12px; /* Internal spacing for usability */
+    margin-bottom: 10px; /* Margin between inputs/elements (vertical spacing) */
+    border: 1px solid #ccc; /* Subtle gray border */
+    border-radius: 5px; /* Rounded corners for modern look */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-size: 16px; /* Matches body font size */
+}
+
+/* Style the submit button specifically */
+form button[type="submit"] {
+    background-color: #007bff; /* Blue background for action */
+    color: white; /* White text */
+    border: none; /* Remove default border, use our custom one if needed */
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Style the form container for better layout */
+form {
+    max-width: 400px; /* Limits form width on larger screens */
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%; /* Scales image to fit container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Prevents unwanted spacing */
+    margin-bottom: 10px; /* Adds spacing below images */
+}
